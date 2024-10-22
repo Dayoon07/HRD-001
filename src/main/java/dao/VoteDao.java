@@ -101,6 +101,7 @@ public class VoteDao {
 		try {
 			con  = DBUtils.getConnection();
 			ps = con.prepareStatement("INSERT INTO T3_vote VALUES(?, ?, ?, ?, ?, ?)");
+
 			ps.setString(1, vo.getV_jumin());
 			ps.setString(2, vo.getV_name());
 			ps.setString(3, vo.getC_no());
@@ -158,13 +159,7 @@ public class VoteDao {
 		}
 		
 		return list;
-	}
-	
-	
-	
-	
-	
-	
+	}
 	
 	
 }
