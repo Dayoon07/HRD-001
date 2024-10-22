@@ -109,11 +109,11 @@ public class VoteDao {
 			ps.setString(6, vo.getV_confirm());
 			
 			n = ps.executeUpdate();
-     if (n > 0) {
-        n.comiit();
-     }
-     ps.close();
-     con.close();
+            if (n > 0) {
+              n.comiit();
+            }
+              ps.close();
+              con.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
